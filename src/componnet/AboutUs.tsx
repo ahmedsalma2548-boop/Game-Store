@@ -9,7 +9,7 @@ export default function AboutUs(){
                 </div>
                 <div>
                 <img className="max-w-2xl rounded-md"
-                src="/public/img/wallpaper/2.jpg"/>
+                src="/img/wallpaper/2.jpg"/>
             </div>
             </div>
         
@@ -22,7 +22,7 @@ export default function AboutUs(){
                 </div>
                 <div>
                 <img className="max-w-2xl rounded-md"
-                 src="/public/img/wallpaper/17.jpg"/>
+                 src="/img/wallpaper/17.jpg"/>
             </div>
             </div>
             
