@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         <p className="text-center md:text-right">
-          📞 010924016
+          📞 01092401673
         </p>
 
       </div>
