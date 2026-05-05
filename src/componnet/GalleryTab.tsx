@@ -47,7 +47,7 @@ const AppGallery = () => {
               
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src={item.img}
+                  src={item.image}
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
 

@@ -273,42 +273,37 @@ export const galleryItems: any[] = [
     type: "Top Games",
     count: 24,
     image: "/img/New folder1/6.jpg",
-    img: undefined,
   },
   {
     id: 2,
     type: "Trend Games",
     count: 16,
     image: "/img/New folder/26.jpg",
-    img: undefined,
   },
   {
     id: 3,
     type: "Wallpaper",
     count: 33,
     image: "/img/wallpaper/11.jpg",
-    img: undefined,
   },
   {
     id: 4,
     type: "Top Games",
     count: 24,
     image: "/img/New folder1/23.jpg",
-    img: undefined,
+    
   },
   {
     id: 5,
     type: "Trend Games",
     count: 16,
     image: "/img/New folder/3.jpg",
-    img: undefined,
   },
   {
     id: 6,
     type: "Wallpaper",
     count: 33,
     image: "/img/wallpaper/13.jpg",
-    img: undefined,
   },
 ];
 
