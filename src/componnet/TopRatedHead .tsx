@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { gamesObject } from "./data";
 
-export default function TeamMembers() {
+export default function TopRatedHead() {
   return (
     <div className="py-16">
       

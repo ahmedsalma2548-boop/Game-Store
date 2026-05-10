@@ -1,4 +1,4 @@
-export default function Testimonials() {
+export default function MostActivePlayers() {
   type Gamer = {
   id: number;
   name: string;

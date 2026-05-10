@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -17,7 +17,7 @@ import {
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useNavigate, Link as RouterLink, useLocation, To } from "react-router-dom";
+import { useNavigate, Link as RouterLink, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -84,13 +84,13 @@ export default function Header() {
     }
   });
 
-  const handleNav = (path: To | undefined, closeMenu = true) => {
+  const handleNav = (path, closeMenu = true) => {
     navigate(path);
     setAnchorEl(null);
     if (closeMenu) setMobileOpen(false);
   };
 
-  const handleMenuOpen = (event: { currentTarget: SetStateAction<null>; }) => {
+  const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
 

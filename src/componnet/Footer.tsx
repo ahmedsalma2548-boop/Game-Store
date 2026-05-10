@@ -22,9 +22,9 @@ export default function Footer() {
         </p>
 
         <div className="flex justify-center gap-5 text-lg">
-          <Globe className="cursor-pointer hover:text-purple-400 transition duration-200" />
-          <MessageCircle className="cursor-pointer hover:text-green-400 transition duration-200" />
-          <Share2 className="cursor-pointer hover:text-pink-400 transition duration-200" />
+          <Globe className="hover:text-purple-400 transition duration-200" />
+          <MessageCircle className=" hover:text-green-400 transition duration-200" />
+          <Share2 className="hover:text-pink-400 transition duration-200" />
         </div>
 
         <p className="text-center md:text-right">

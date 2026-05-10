@@ -1,10 +1,10 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from './componnet/Header'
 import Hero from './componnet/HeroSection'
-import Articles from './componnet/Articles'
+import TrendingGamesHead from './componnet/TrendingGamesHead'
 import Gallery from './componnet/Gallery'
-import Testimonials from './componnet/Testimonials'
-import TeamMembers from './componnet/TeamMembers'
+import MostActivePlayers from './componnet/MostActivePlayers'
+import TopRatedHead from './componnet/TopRatedHead '
 import Footer from './componnet/Footer'
 import GameDetails from './componnet/GameDetails'
 import TopRated from './componnet/TopRated'
@@ -31,10 +31,10 @@ function AppContent() {
         <Route path="/" element={
           <>
             <Hero />
-            <TeamMembers />
-            <Articles />
+            <TopRatedHead />
+            <TrendingGamesHead />
             <Gallery />
-            <Testimonials />
+            <MostActivePlayers />
             <Footer />
           </>
         } />
