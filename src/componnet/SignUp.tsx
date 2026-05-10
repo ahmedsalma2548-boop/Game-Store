@@ -8,9 +8,15 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [repeatpass, setRepeatpass] = useState("");
+  const [error, SetError] = useState("")
 
-  function handleSignup(e: { preventDefault: () => void; }) {
+  function HandleSignup(e: { preventDefault: () => void; }) {
     e.preventDefault();
+    if(name ===("") || lastname ===("") || email ===("") || password ===("") || repeatpass ===("")){
+      SetError("Please Fill In All Fields")
+      return
+    }
+    SetError("")
     console.log({ name, lastname, email, password, repeatpass });
   }
 
@@ -32,7 +38,7 @@ export default function Signup() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex justify-center items-center">
       <Box
         component="form"
-        onSubmit={handleSignup}
+        onSubmit={HandleSignup}
         sx={{
           width: "370px",
           padding: "35px",
@@ -67,7 +73,9 @@ export default function Signup() {
         >
           Join GameStore and start your journey
         </Typography>
-
+          {error &&(
+            <Typography sx={{color:"red", textAlign:"center", fontSize:"20px"}}>{error}</Typography>
+          )}
         <TextField
           label="First Name"
           fullWidth

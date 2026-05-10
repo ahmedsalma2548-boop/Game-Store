@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { Wallpaper} from "./data";
-import { Link } from "react-router-dom";
-import { Home as HomeIcon } from "lucide-react";
 
 export default function WallpaperGallery(){
     const [selectedImg, setSelectedImg] = useState(null)
 
-    function handellClick(img){
+    function handellClick(img: string | SetStateAction<null> | undefined){
         setSelectedImg(img)
     }
 

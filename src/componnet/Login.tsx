@@ -4,16 +4,24 @@ import { Link } from "react-router-dom"
 
 export default function Login(){
 
-const [email, setemail] = useState("")
-const [password, setpassword]= useState("")
+const [email, SetEmail] = useState("")
+const [password, SetPassword] = useState("")
+const [error, SetError] = useState("")
+
     function HundellSIGNIN(e: { preventDefault: () => void }){
         e.preventDefault()
+        if(email ===("") || password ===("")){
+            SetError("Please Fill In All Fields")
+            return
+        }
+        SetError("")
         console.log({email, password})
     }
     return(
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center flex-col">
-            <Box
+            <Box 
                 component="form"
+                onSubmit={HundellSIGNIN}
                 sx={{
                     width: "350px",
                     padding: "30px",
@@ -37,6 +45,11 @@ const [password, setpassword]= useState("")
                 >
                     Welcome Back 👋
                 </Typography>
+                {error &&(
+                    <Typography sx={{color:"red", textAlign:"center", fontSize:"20px"}}>
+                        {error}
+                    </Typography>
+                )}
 
                 <TextField 
                     sx={{
@@ -52,7 +65,7 @@ const [password, setpassword]= useState("")
                     label="Email" 
                     value={email} 
                     fullWidth
-                    onChange={(e)=>{ setemail(e.target.value) }}
+                    onChange={(e)=>{ SetEmail(e.target.value) }}
                 />
 
                 <TextField 
@@ -70,11 +83,11 @@ const [password, setpassword]= useState("")
                     type="password"
                     value={password} 
                     fullWidth
-                    onChange={(e)=>{ setpassword(e.target.value) }}
+                    onChange={(e)=>{ SetPassword(e.target.value) }}
                 />
                 
                 <Button 
-                    onClick={HundellSIGNIN}
+                    type="submit"
                     variant="contained"
                     sx={{
                         fontSize:"16px",

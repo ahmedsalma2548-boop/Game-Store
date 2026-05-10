@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
         
         <div className="flex gap-4 justify-center">
-          <button className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold hover:scale-105 transition-transform duration-300 shadow-lg">
+          <button className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold hover:scale-105 transition-transform duration-300 shadow-lg cursor-auto">
             Start Your Journey 🚀
           </button>
         </div>
